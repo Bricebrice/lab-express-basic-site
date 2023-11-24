@@ -5,6 +5,11 @@ body {
   box-sizing: border-box;
 }
 
+h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   background-color: #10a37f;
   color: white;
@@ -44,12 +49,24 @@ nav a {
   padding: 0.7em;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   background-color: #10a37e88;
   color: white;
 }
 
-section {
+.introduction {
   padding: 1em;
   text-align: center;
+}
+
+.about,
+.works {
+  padding: 1em;
+  text-align: left;
+}
+
+section img {
+  max-width: 100%;
+  border-radius: 10px;
 }
